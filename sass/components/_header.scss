@@ -6,22 +6,42 @@ font-weight: 400;
 line-height: normal;
 color: $yellowColor;
 }
-.header {
-    display: none;
 
-@include desktop {
+.header {
 display: flex;
 flex-direction: row;
-gap: 28px;
+justify-content: space-between;
 
 &__list {
-    
-color: #FCFCFC;
-font-size: 16px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+
+display: none;
+
+@include desktop {
+    display: flex;
+    flex-direction: row;
+    color: $blackColor;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    gap: 28px;
 }
     }
+&__title {
+    color: $whiteColor;
+    font-family: Seymour One;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+    padding-left: 20px;
+
+    @include desktop {
+    
+    font-size: 38px;
+    font-weight: 400;
+    text-align: left;
+}
+}
 }
