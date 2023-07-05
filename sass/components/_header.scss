@@ -1,0 +1,27 @@
+.logo {
+font-size: 14.874px;
+font-family: $fontSecond;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+color: $yellowColor;
+}
+.header {
+    display: none;
+
+@include desktop {
+display: flex;
+flex-direction: row;
+gap: 28px;
+
+&__list {
+    
+color: #FCFCFC;
+font-size: 16px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+    }
+}

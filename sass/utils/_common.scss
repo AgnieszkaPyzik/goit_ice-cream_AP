@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+.section {
+    padding: 60px 0;
+
+    @include desktop {
+      padding: 94px 0;
+    }
+}
+ img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+   .container {
+    max-width: 480px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @include tablet {
+        max-width: 768px;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+    }
+  
+}
+
+ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  body {
+    font-family: $fontFirst;
+    color: $blackColor;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+  }
+  h1 {
+    position: relative;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $blackColor;
+
+    @include tablet {
+      font-size: 120px;
+    }
+
+    @include desktop {
+      font-size: 160px;
+    }
+  }
+ h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+
+  @include tablet {
+    font-size: 44px;
+  }
+ }
+  h3 {
+    font-weight: 500;
+    font-size: 14px;
+    color: $blackColor;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    @include tablet {
+      font-size: 32px;
+    }
+    @include desktop{
+      font-size: 36px
+    }
+  }
+  h4 {
+    color:$whiteColor;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    padding: 30px 0;
+  }
+
+  p {
+    line-height: 1.9;
+    font-size: 18px;
+    color: $blackColor;
+
+    @include tablet {
+      font-size: 32px;
+    }
+
+  }
+ 

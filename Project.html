@@ -17,15 +17,40 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./sass/components/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>IceCream</title>
   </head>
   <body>
     <header>
-      <div class="container container--header">
-         
+      <div class="container container--header"></div>
+      <svg></svg>
+      <span class="logo">ce</span>
+      <ul class="header">
+        <li class="header__list">Home</li>
+        <li class="header__list">How it's made?</li>
+        <li class="header__list">Our products</li>
+        <li class="header__list">Contacts</li>
+      </ul>
+      <div class="header__button">
+        <button type="submit" class="mobile-menu__btn">Buy now ></button>
+      </div>
     </header>
-
+    <main>
+      <section class="section section--header">
+        <h1>ice cream made with passion</h1>
+        <button type="button">Products</button>
+        <a href="#">How it’s made?</a>
+        <!--Zdjęcie Lodów Na Desktop-->
+        <p>
+          Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+          unforgettable experience!
+        </p>
+        <ul>
+          <li>16<br /><span>cafes</span></li>
+          <li>23<br /><span>food trucks</span></li>
+        </ul>
+      </section>
+    </main>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button type="button" class="menu-container__close-btn js-close-menu">
         <svg class="menu-container__icon-btn" width="24" height="24">
@@ -33,12 +58,14 @@
         </svg>
       </button>
       <ul class="mobile-menu">
-        <li>Home</li>
-        <li>How it's made?</li>
-        <li>Our products</li>
-        <li>Contacts</li>
-        <li>Blog</li>
+        <li class="mobile-menu__list">Home</li>
+        <li class="mobile-menu__list">How it's made?</li>
+        <li class="mobile-menu__list">Our products</li>
+        <li class="mobile-menu__list">Contacts</li>
       </ul>
+      <div class="mobile-menu__button">
+        <button type="submit" class="mobile-menu__btn">Buy now ></button>
+      </div>
     </div>
     <script
       defer
@@ -47,10 +74,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/mobile-menu.js"></script>
-    <section>
-      <div class="conteiner chicago">
-        <div class="chicago_box"><p class="chicao_cafe">CAFE</p></div>
-      </div>
-    </section>
   </body>
 </html>
