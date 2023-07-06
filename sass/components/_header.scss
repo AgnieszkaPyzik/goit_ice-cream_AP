@@ -5,12 +5,11 @@ justify-content: space-between;
 
 &__list {
 
-display: none;
+    display: none;
 
-@include desktop {
+    @include tablet {
     display: flex;
     flex-direction: row;
-    color:  #FCFCFC;
     font-size: 16px;
     font-family: Montserrat;
     font-style: normal;
@@ -18,45 +17,45 @@ display: none;
     gap: 28px; 
 }
 }
-
-&__button {
+&__link {
+    text-decoration: none;
+    color:  #FCFCFC;
+}
+}
+.modal-btn {
 
     display: none;
 
     @include tablet {
 
     display: flex;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
     border-radius: 10px;
-    background-color: $yellowColor;
-    padding: 12px 35px 12px 36px;
+    background-color: #F8D24E;
+    color: #000000;
     border: none;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+
+    &--modal-open {
+    padding: 12px 35px 12px 36px;
     margin-right: 16px;
-
-    &__btn-name {
-        
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-               
-    }
-    }
+ }
 }
 }
-
 
 .header2 {
-    display: flex;
-    text-align: left;
-
-    @include desktop {
+   
     display: flex;
     justify-content: space-between;
-    }
+    
 
     &__title {
-        color: $whiteColor;
+        color: #FCFCFC;
         font-family: Seymour One;
         font-size: 26px;
         font-style: normal;
@@ -75,10 +74,7 @@ display: none;
     }
     &__list {
 
-        display: none;
-    
-        @include desktop {
-
+       @include desktop {
         display: flex;
         flex-direction: column;
         }
